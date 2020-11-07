@@ -1,0 +1,56 @@
+.container {
+    padding: 50px;
+}
+.main_card {
+    padding: 30px;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+}
+.ribbon_wrapper {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    height: 100px;
+    overflow: hidden;
+
+}
+.ribbon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(140, 190, 255);
+    transform: rotate(45deg) translate(26px, -20px);
+    position: relative;
+    box-shadow: 2px 3px 7px 0px rgb(146 146 146 / 50%);
+}
+.rib_p{
+    padding-left: 30px;
+    font-weight: 500;
+    font-size: 20px;    
+}
+.ribbon:before{
+    content: ' ';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 7px 0 7px;
+    border-color: #4385ca transparent transparent transparent;
+    position: absolute;
+    right: 104px;
+    top: 30px;
+}
+.ribbon:after{
+    content: ' ';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 7px 0 7px;
+    border-color: #4385ca transparent transparent transparent;
+    position: absolute;
+    right: 0px;
+    top: 30px;
+}
